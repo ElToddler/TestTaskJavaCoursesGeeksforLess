@@ -7,7 +7,7 @@ public class LettersCheck {
         String cyrRegex = ".*[А-Я, а-я].*";
 
         if (NewExpression.matches(alphRegex) || NewExpression.matches(symbRegex) || NewExpression.matches(cyrRegex)) {
-            System.out.println("Contains invalid symbols!");
+            System.out.println("Expression is incorrect!");
         } else {
             return true;
         }

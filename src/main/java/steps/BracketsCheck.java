@@ -21,7 +21,7 @@ public class BracketsCheck {
                 }
             }
         } else {
-
+            System.out.println("Expression is incorrect!");
             return false;
         }
     }

@@ -11,7 +11,7 @@ public class neighboursCheck {
         String secondNeighbour = String.valueOf(secondNeighbourChar);
 
         if (firstNeighbour.matches(beforeRegex) && secondNeighbour.matches(afterRegex)){ //two of the neighbours should not be symbols
-
+            System.out.println("Expression is incorrect!");
             return false;
         }
     }
