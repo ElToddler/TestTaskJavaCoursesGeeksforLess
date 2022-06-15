@@ -1,7 +1,7 @@
 package steps;
 
 public class BracketsCheck {
-    public void checkBrackets(String NewExpression) {
+    public boolean checkBrackets(String NewExpression) {
     char openBracket = '(';
     char closeBracket = ')';
     int count = 0;
@@ -21,20 +21,11 @@ public class BracketsCheck {
                 }
             }
         } else {
-//            System.out.println("Brackets are incorrect!");
-            break;
+
+            return false;
         }
     }
 
-       if(count != 0)
-
-    {   //we are checking if all of "(" are closed
-        System.out.println("Brackets are incorrect!");
-    } else
-
-    {
-        System.out.println("Brackets are correct!");
-    }
-
-
-}}
+        //we are checking if all of "(" are closed
+        return count == 0;
+    }}
