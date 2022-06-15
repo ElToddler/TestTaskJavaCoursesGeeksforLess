@@ -1,4 +1,8 @@
-package steps;
+import steps.CountNumbers;
+import steps.DatabaseConnection;
+import steps.ExpressionsCalc;
+import steps.FullCheck;
+
 import java.util.Scanner;
 
 public class TestExpression {
